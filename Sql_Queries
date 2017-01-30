@@ -1,0 +1,74 @@
+--Table creation statements, for employees available on what days
+CREATE TABLE monday_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+CREATE TABLE tuesday_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+CREATE TABLE wednesday_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+CREATE TABLE thursday_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+CREATE TABLE friday_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+CREATE TABLE weekend_delivery (EMPLOYEE_ID NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), IS_AVAIL CHAR(1));
+
+--Creates a sequence which allows us to populate the employee_num field, by using the .nextval
+CREATE SEQUENCE  emp_num START WITH 100 MINVALUE 100 INCREMENT BY 1 CACHE 100;
+
+--Inserts for our monday_delivery availability
+insert into monday_delivery values(emp_num.nextval, 'Jeremiah', 'Porter', 'Y');
+insert into monday_delivery values(emp_num.nextval, 'Derrick', 'Zanie', 'Y');
+insert into monday_delivery values(emp_num.nextval, 'Connor', 'Reid', 'N');
+insert into monday_delivery values(emp_num.nextval, 'Chad', 'Deamer', 'N');
+insert into monday_delivery values(emp_num.nextval, 'Owen', 'Stoltzfus', 'N');
+
+--Select from our monday_delivery - to test if our inserts worked
+select * from monday_delivery;
+
+--Inserts for our tuesday_delivery availability
+insert into tuesday_delivery values(100, 'Jeremiah', 'Porter', 'N');
+insert into tuesday_delivery values(101, 'Derrick', 'Zanie', 'N');
+insert into tuesday_delivery values(102, 'Connor', 'Reid', 'Y');
+insert into tuesday_delivery values(103, 'Chad', 'Deamer', 'Y');
+insert into tuesday_delivery values(104, 'Owen', 'Stoltzfus', 'N');
+
+--Select from our tuesday_delivery - to test if our inserts worked
+select * from tuesday_delivery;
+
+--Inserts for our wednesday_delivery availability
+insert into wednesday_delivery values(100, 'Jeremiah', 'Porter', 'Y');
+insert into wednesday_delivery values(101, 'Derrick', 'Zanie', 'N');
+insert into wednesday_delivery values(102, 'Connor', 'Reid', 'N');
+insert into wednesday_delivery values(103, 'Chad', 'Deamer', 'N');
+insert into wednesday_delivery values(104, 'Owen', 'Stoltzfus', 'Y');
+
+--Select from our wednesday_delivery - to test if our inserts worked
+select * from wednesday_delivery;
+
+--Inserts for our thursday_delivery availability
+insert into thursday_delivery values(100, 'Jeremiah', 'Porter', 'N');
+insert into thursday_delivery values(101, 'Derrick', 'Zanie', 'Y');
+insert into thursday_delivery values(102, 'Connor', 'Reid', 'Y');
+insert into thursday_delivery values(103, 'Chad', 'Deamer', 'N');
+insert into thursday_delivery values(104, 'Owen', 'Stoltzfus', 'N');
+
+--Select from our thursday_delivery - to test if our inserts worked
+select * from thursday_delivery;
+
+--Inserts for our friday_delivery availability
+insert into friday_delivery values(100, 'Jeremiah', 'Porter', 'N');
+insert into friday_delivery values(101, 'Derrick', 'Zanie', 'N');
+insert into friday_delivery values(102, 'Connor', 'Reid', 'N');
+insert into friday_delivery values(103, 'Chad', 'Deamer', 'Y');
+insert into friday_delivery values(104, 'Owen', 'Stoltzfus', 'Y');
+
+--Select from our friday_delivery - to test if our inserts worked
+select * from friday_delivery;
+
+--Inserts for our weekend_delivery availability
+insert into weekend_delivery values(100, 'Jeremiah', 'Porter', 'N');
+insert into weekend_delivery values(101, 'Derrick', 'Zanie', 'N');
+insert into weekend_delivery values(102, 'Connor', 'Reid', 'N');
+insert into weekend_delivery values(103, 'Chad', 'Deamer', 'N');
+insert into weekend_delivery values(104, 'Owen', 'Stoltzfus', 'N');
+insert into weekend_delivery values(emp_num.nextval, 'Porter', 'Derrick', 'Y');
+insert into weekend_delivery values(emp_num.nextval, 'Zanie', 'Connor', 'Y');
+insert into weekend_delivery values(emp_num.nextval, 'Reid', 'Jeremiah', 'Y');
+insert into weekend_delivery values(emp_num.nextval, 'Deamer', 'Owen', 'Y');
+
+--Select from our friday_delivery - to test if our inserts worked
+select * from weekend_delivery;
