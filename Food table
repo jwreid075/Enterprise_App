@@ -1,0 +1,20 @@
+
+CREATE TABLE food (FOOD_ID NUMBER(38), FOOD_NAME VARCHAR(50), DESCRIPTION VARCHAR(200), AMOUNT NUMBER(38));
+
+CREATE SEQUENCE FOOD_ID START WITH 1000 MINVALUE 1000 INCREMENT BY 1 CACHE 100;
+
+INSERT into FOOD values (FOOD_ID.nextval, 'Chicken Nuggets', 'Our famous Chicken MacNuggets', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Nuggets', 'Our famous Grilled Chicken MacNuggets', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Chicken Tenders', 'Our famous Chicken MacTenders', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Chicken Sandwich', 'Our famous Chicken MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Deluxe Chicken Sandwich', 'Our famous Deluxe Chicken MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Spicy Chicken Sandwich', 'Our famous Spicy Chicken MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Spicy Deluxe Chicken Sandwich', 'Our famous Spicy Chicken MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Club Chicken Sandwich', 'Our famous Chicken Club MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Club Sandwich', 'Our famous Grilled Chicken Club MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Sandwich', 'Our famous Grilled Chicken MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Wrap', 'Our famous Grilled Chicken MacWrap', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Salad Sandwich', 'Our famous Grilled Chicken Salad MacSammich', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Market Salad', 'Our famous Grilled Chicken Market MacSalad', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Grilled Chicken Cobb Salad', 'Our famous Grilled Chicken Cobb MacSalad', 1000);
+INSERT into FOOD values (FOOD_ID.nextval, 'Spicy Grilled Chicken Southwest Market Salad', 'Our famous Spicy Grilled Chicken Southwest MacSalad', 1000);
