@@ -1,3 +1,7 @@
 CREATE TABLE EMPLOYEES (emp_num NUMBER(38), FIRST_NAME VARCHAR2(20), LAST_NAME VARCHAR2(20), DELIVERY_ZIP_CODE NUMBER(10), STREET_ADDRESS VARCHAR2(50), CITY VARCHAR2(20), STATE_ABBR VARCHAR2(2), HOME_ZIP_CODE VARCHAR(10));
 
 insert into employees values(emp_num.nextval, 'Jeremiah', 'Porter', 15071, '1111 McKee Road', 'Oakdale', 'PA', 15071);
+insert into employees values(emp_num.nextval, 'Derrick', 'Zanie', 15106, '1113 McFake Road', 'Oakdale', 'PA', 15071);
+insert into employees values(emp_num.nextval, 'Connor', 'Reid', 15203, '1115 McFake Road', 'Oakdale', 'PA', 15106);
+insert into employees values(emp_num.nextval, 'Chad', 'Deamer', 15120, '1756 Fakeson Drive', 'Oakdale', 'PA', 15061);
+insert into employees values(emp_num.nextval, 'Owen', 'Stoltzfus', 15061, '1209 Fake Lane', 'Oakdale', 'PA', 15120);
