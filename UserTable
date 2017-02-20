@@ -1,0 +1,7 @@
+CREATE TABLE users (USERNAME VARCHAR(32), USER_PASSWORD VARCHAR(32), FIRST_NAME VARCHAR(32), LAST_NAME VARCHAR(32), ADDRESS VARCHAR(50), CITY VARCHAR(32), STATE_ABBR VARCHAR(2), ZIPCODE VARCHAR(10), USERTYPE VARCHAR(16));
+
+INSERT INTO users VALUES ('Admin', 'Password', 'Connor', 'Zanie', '1111 McKee Road', 'Oakdale', 'PA', '15071', 'ADMIN');
+
+INSERT INTO users VALUES ('User', 'Password', 'Rick', 'Porter', '1800 SafeAuto Road', 'Oakdale', 'PA', '15071', 'CUSTOMER');
+
+INSERT INTO users VALUES ('VGCDebby', 'CallOfDuty', 'Debby', 'Porter', '1800 SafeAuto Road', 'Oakdale', 'PA', '15071', 'CUSTOMER');
