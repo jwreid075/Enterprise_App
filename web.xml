@@ -1,0 +1,18 @@
+<web-app>
+<!-- servlet-name NEEDS TO BE UNIQUE, CAN't BE A DUPE, reason for this is because the server keeps
+track of previous, even if not called. The servlet class will reference what class from WINSCP (the
+class that we HAVE TO COMPILE IN NETBEANS(OR ANY IDE), we use. The servlet mapping is determined by 
+field you would want to go to. IE, to map the welcome url to the welcome form action in the HTML
+Page, the values need to be that same. KEEP ALL CODE WITHIN THE WEB-APP TAGS  -->
+
+<servlet>
+<servlet-name>test</servlet-name>
+<servlet-class>TestServ</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>test</servlet-name>
+<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+
+</web-app>
