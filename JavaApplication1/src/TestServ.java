@@ -21,6 +21,7 @@ public class TestServ extends HttpServlet
                 String htmlPrintTwo = htmlPrint.secondHtmlReturn();
                 String htmlTotalButton = htmlPrint.totalButton();
                 String htmlRemoveButton = htmlPrint.removeButton();
+                String htmlCompleteButton = htmlPrint.completeButton();
                 int idNum = 1;
                 String query = "select FOOD_NAME, FOOD_PRICE from FOOD";    
          try
@@ -68,7 +69,6 @@ public class TestServ extends HttpServlet
                 pw.print("<p id=\"totalField\" align=\"center\"></p>");
                 pw.print("<script>document.getElementById(\"totalID\").addEventListener(\"click\",Total);</script>");
                 pw.print("<script>document.getElementById(\"removeID\").addEventListener(\"click\",Remove);</script>");
-
                 pw.print("<script>"
                        + "function AddToOrder(id)"
                        + "{"
@@ -88,10 +88,12 @@ public class TestServ extends HttpServlet
                         + " totalOutput += totalArray[i];"
                         + "}"
                         + "document.getElementById(\"totalField\").innerHTML = \"Your total price: $\" + totalOutput;"
-                        + "}" 
+                        + "document.getElementById(\"complete\").disabled = false;"
+                        + "}"
                         +"</script>");
                pw.print("<div align=\"center\">");
                pw.print(htmlTotalButton);
+               pw.print(htmlCompleteButton);
                pw.print(htmlRemoveButton);
                pw.print("</div>");
                 pw.print("</body>");

@@ -76,11 +76,13 @@ public class SignUpUser extends HttpServlet
                         +"</script>"
                          
                 );          
-                pw.print("<form name=\"login\">"
-                        +"Username<input type=\"text\" name=\"userid\"/>"
-			+"Password<input type=\"password\" name=\"pswrd\"/>"
-			+"<input type=\"button\" onclick=\"check(this.form)\" value=\"Login\"/>"
-			+"<input type=\"reset\" value=\"Cancel\"/>"
+                pw.print("<form name=\"login\">\n"
+                        +"Username<input type=\"text\" name=\"userid\"/>\n"
+			+"Password<input type=\"password\" name=\"pswrd\"/>\n"
+			//+"<input type=\"button\" onclick=\"check(this.form)\" value=\"Login\"/>\n"
+                        +"<button type=\"button\" onClick=\"check(this.form)\" id=\"login\">" + "Login</button>"
+                        +"<script>document.getElementById(\"login\").addEventListener(\"click\",check);</script>"
+			+"<input type=\"reset\" value=\"Cancel\"/>\n"
 			+"</form>");
                 while(rs.next())
                 {
@@ -88,14 +90,14 @@ public class SignUpUser extends HttpServlet
                 String passWord = rs.getString("USER_PASSWORD");
                 pw.print(
                         "<script language=\"javascript\">"
-                        +"function check(form)"
-                        +"{"
-                        +"if(form.userid.value ==" + userName + " && form.pswrd.value == " + passWord + ")"
-			+"{"
-			+"window.open('home.html')"
-			+"}"
-			+"else{alert(\"Error Password or Username\")}"
-                        +"}"
+                        +"function check(form)\n"
+                        +"{\n"
+                        +"if(form.userid.value ==\"john\" && form.pswrd.value == \"john\")\n"
+			+"{\n"
+			+"window.open('home.html');\n"
+			+"}\n"
+			+"else{alert(\"Error Password or Username\");\n}"
+                        +"}\n"
                         +"</script>");
                 }             
                         pw.print("<hr>\n"
