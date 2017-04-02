@@ -24,7 +24,8 @@ public class mainHtmlPrint
                 "</tr>\n"+"\n"+"</table>\n"+"\n"+"<hr>\n"+"\n"+"\n"+"<div id=\"footer\">\n"+"<nav>\n"+"<ul>\n"+
                 "		<li><form action=\"home.html\"><input type =\"submit\" value=\"Home\"/></form></li><li><form action=\"menu.html\"><input type =\"submit\" value=\"Menu\"/></form></li><li><form action=\"order.html\"><input type=\"submit\" value=\"Order\"/></form></li><li><form action=\"contact.html\"><input type =\"submit\" value=\"Contact\"/></form></li><li><form action=\"login.html\"><input type=\"submit\" value=\"Login\"/></form></li>\n" +
                 "</ul>\n"+"</nav>\n"+"<br>\n"+"</div>\n"+"<br>\n"+"<hr>";
-    
+    String totalButton = "<button type=\"button\" onClick=\"Total()\" id=\"totalID\">" + "Total</button>";
+    String removeButton = "<form action=\"order.html\"><input type=\"submit\"  value=\"Reset\"/>";
     public String htmlReturn()
     {
         return htmlOneTestServ;
@@ -43,5 +44,15 @@ public class mainHtmlPrint
     public String htmlMenuLoadTwo()
     {
         return htmlTwoMenuLoad;
+    }
+    
+    public String totalButton()
+    {
+        return totalButton;
+    }
+    
+    public String removeButton()
+    {
+        return removeButton;
     }
 }
