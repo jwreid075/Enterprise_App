@@ -75,8 +75,8 @@ public class SignUpUser extends HttpServlet
                         + "}"
                         +"</script>"
                          
-                );          
-                pw.print("<form name=\"login\">\n"
+                );
+                        pw.print("<form name=\"login\">\n"
                         +"Username<input type=\"text\" name=\"userid\"/>\n"
 			+"Password<input type=\"password\" name=\"pswrd\"/>\n"
 			//+"<input type=\"button\" onclick=\"check(this.form)\" value=\"Login\"/>\n"
@@ -92,14 +92,14 @@ public class SignUpUser extends HttpServlet
                         "<script language=\"javascript\">"
                         +"function check(form)\n"
                         +"{\n"
-                        +"if(form.userid.value ==\"john\" && form.pswrd.value == \"john\")\n"
+                        +"if(form.userid.value ==\"john\" && form.pswrd.value ===\"jim\")\n"
 			+"{\n"
 			+"window.open('home.html');\n"
 			+"}\n"
 			+"else{alert(\"Error Password or Username\");\n}"
                         +"}\n"
                         +"</script>");
-                }             
+                }       
                         pw.print("<hr>\n"
                         +"<p style=\"font-size: 12px; text-align: center\">Copyright Das Schwarze Hahnchen (R) 2017</p>"
                 );
@@ -112,5 +112,6 @@ public class SignUpUser extends HttpServlet
                 //pw.println("ERROR "+ e.getMessage());
             }	
         }
-    
+           
 }
+
