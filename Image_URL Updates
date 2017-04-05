@@ -1,0 +1,63 @@
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-PDP-Images/Entrees/CFA_PDP_Chick-Fil-A-Sandwich_1085.ashx'
+WHERE FOOD_ID = 1104;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-PDP-Images/Entrees/CFA_PDP_Deluxe-Sandwich_1085.ashx'
+WHERE FOOD_ID = 1105;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Batch%201/Spicy-Chick-Fil-A-Sandwich/CFA_PDP_Spicy-Chick-Fil-A-Sandwich_1085.png'
+WHERE FOOD_ID = 1106;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0053_CFA_PDP_Spicy-Deluxe-Sandwich_1085.png.png'
+WHERE FOOD_ID = 1107;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0047_CFA_PDP_Nuggets-8ct_1085.png'
+WHERE FOOD_ID = 1101;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0014_CFA_PDP_ChickNStrips-4ct_1085.png'
+WHERE FOOD_ID = 1103;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0026_CFA_PDP_Grilled-Deluxe-Sandwich_1085.png'
+WHERE FOOD_ID = 1110;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-Feed-Images/Entrees/Feed_Menu__0006_Entrees_Grilled-Nuggets_8ct.ashx'
+WHERE FOOD_ID = 1102;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0025_CFA_PDP_Grilled-Club-Sandwich_1085.png'
+WHERE FOOD_ID = 1109;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/PDP/Menu%20Items%20Corrected/Final__0024_CFA_PDP_Grilled-Chicken-Wrap_1085.png'
+WHERE FOOD_ID = 1111;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-Feed-Images/Salads/Feed_Menu_0038_Salad_Market.ashx'
+WHERE FOOD_ID = 1113;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-Feed-Images/Salads/Stack6200004CFAPDPCobbSalad1085png.ashx'
+WHERE FOOD_ID = 1100;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-Feed-Images/Salads/Feed_Menu_0004_Salads_Spicy-South-West.ashx'
+WHERE FOOD_ID = 1000;
+
+UPDATE FOOD
+SET IMAGE_URL = 'https://www.chick-fil-a.com/-/media/Images/CFACOM/Menu-Items/WS-Menu-Feed-Images/Entrees/feed-SwCknSal-parchx.ashx'
+WHERE FOOD_ID = 1112;
+
+UPDATE FOOD
+SET IMAGE_URL = 'http://www.grubgrade.com/wp-content/uploads/2012/03/Wendys-Spicy-Guacamole-Chicken-Club.jpg'
+WHERE FOOD_ID = 1108;
+
+SELECT * FROM FOOD;
+
+SELECT * FROM USERS;
